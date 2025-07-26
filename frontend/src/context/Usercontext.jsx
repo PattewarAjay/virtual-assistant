@@ -28,7 +28,7 @@ function Usercontext ({children}){
         const result=await axios.post(`${serverUrl}/api/user/asktoassistant`,{command}, {
     headers: {
       Authorization: `Bearer ${token}`
-    },{withCredentials:true})
+    }},{withCredentials:true})
         return result.data
       } catch (error) {
         console.log(error);
